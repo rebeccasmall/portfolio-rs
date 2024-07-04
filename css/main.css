@@ -165,6 +165,7 @@ section#about-me {
     background-color: #71826D;
     display: flex;
     padding-bottom: 20px;
+    justify-content: center;
 }
 
 #work h3 {
@@ -226,3 +227,49 @@ button:hover {
     border: #F0743E 2px solid;
     color: white; 
  }
+
+ /*** BOTTOM STYLE ***/
+
+ #bottom-wrapper {
+    display: flex;
+    background-color: #F6E8D2;
+    margin: 0;
+    padding: 0;
+}
+
+.skills {
+    width: 100%;
+    background-color: #FFBF00;
+    text-align: center;
+}
+
+.skills h3 {
+    padding-top: 5%;
+}
+
+#icons i {
+    font-size: 220%;
+}
+
+.skills ul li {
+    display: inline-block;
+    margin: 0 0 30px 0;
+}
+
+#extra-skills {
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#extra-skills p {
+    display: inline-flex;
+    text-align: center;
+    flex-wrap: nowrap;
+    background-color: black;
+    color:#F6E8D2;
+    border-radius: 25px;
+    padding: 2%;
+    margin: 2%;
+}
