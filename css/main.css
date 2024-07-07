@@ -273,3 +273,49 @@ button:hover {
     padding: 2%;
     margin: 2%;
 }
+
+.beside h2 {
+    text-align: center;
+}
+
+.beside h3 {
+    text-align: center;
+}
+
+.beside ul li {
+    display: inline-block;
+    font-size: 10px;
+}
+
+.beside i {
+    display: flex;
+    font-size: 12vw;
+    margin: 6%;
+    color: #FFBF00;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact h2 {
+    text-align: center;
+}
+
+#contact a {
+    background-color:#F0743E;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 25px;
+    align-self: center;
+}
+
+/*** FOOTER STYLES ***/
+
+footer {
+    display: flex;
+    background-color: #F6E8D2;
+    text-align: center;
+    font-weight: bold;
+}
