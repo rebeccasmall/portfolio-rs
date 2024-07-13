@@ -24,11 +24,11 @@ a {
 }
 
 a:link {
-    color: #FDE9C8;
+    color: #E7E4DF;
   }
   
 a:visited {
-    color: #FDE9C8;
+    color: #E7E4DF;
 }
 
 ul {
@@ -45,10 +45,16 @@ ul {
     max-width: 400px;
 }
 
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;  
+    }
+}
+
 /*** HEADER STYLES ***/
 
 header {
-    background-color: #71826D;
+    background-color: #3B4D38;
     display: flex;
     justify-content: center;
     padding: 20px 0;
@@ -65,7 +71,7 @@ header.container {
 }
 
 #header-bar h3 {
-    color: #F6E8D2;
+    color: #E7E4DF;
     margin: 3%;
 }
 
@@ -82,14 +88,14 @@ header nav ul {
 
 nav ul li {
     display: inline-block;
-    color: #F6E8D2;
+    color: #E7E4DF;
     font-weight: bold;
     padding: 0 2% 7% 2%;
 }
 
 #in-touch {
     background-color: #F0743E;
-    height: 0.5px;
+    padding: 5%;
     border-radius: 25px;
 }
 
@@ -98,7 +104,7 @@ header img {
 }
 
 h1#heading-light {
-    color: #F6E8D2;
+    color: #E7E4DF;
 }
 
 h1.outline-text {
@@ -125,13 +131,14 @@ h1.outline-text {
 }
 
 #header-description {
-    color: #F6E8D2;
+    color: #E7E4DF;
     font-size: 0.9em;
     margin: 5px;
     position: absolute;
     top: 80%;
     width: 80%;
     z-index: 2;
+    font-weight: bold;
 }
 
 .outline-text {
@@ -139,34 +146,22 @@ h1.outline-text {
     z-index: 1;
 }
 
-/*
-#black-block {
-    background-color: black;
-    display: flex;
-    position: absolute;
-    height: 40%;
-    width: 100%;
-    margin: 0;
-    top: 80%;
-}
-*/
-
 /*** ABOUT ME STYLES ***/
 
 section#about-me {
-    background-color: #F6E8D2;
+    background-color: #E7E4DF;
     display: flex;
     flex-direction: column;
 }
 
 #about-me p {
-    margin: 5px 20px 10px 0;
+    margin: 5px 20px 30px 0;
 }
 
 /*** PROJECT STYLES ***/
 
 section#work {
-    background-color: #71826D;
+    background-color: #3B4D38;
     display: flex;
     padding-bottom: 20px;
     justify-content: center;
@@ -191,7 +186,7 @@ section#work {
 }
 
 #work p {
-    color: #F6E8D2;
+    color: #E7E4DF;
 }
 
 #portfolio-wrapper h4 {
@@ -218,17 +213,18 @@ span {
     text-align: center;
 }
 
-button {
+#portfolio-wrapper a {
     width: 100px;
     height: 40px;
-    color: #FDE9C8;
+    color: #E7E4DF;
     background-color: black;
     font-size: 14px;
     border: black 2px solid;
-    border-radius: 30%;
+    border-radius: 25%;
+    padding: 2%;
 }
 
-button:hover {
+#portfolio-wrapper a:hover {
     background-color: #F0743E;
     border: #F0743E 2px solid;
     color: white; 
@@ -238,7 +234,7 @@ button:hover {
 
  #bottom-wrapper {
     display: flex;
-    background-color: #F6E8D2;
+    background-color: #E7E4DF;
     margin: 0;
     padding: 0;
 }
@@ -253,8 +249,19 @@ button:hover {
     padding-top: 5%;
 }
 
-#icons i {
-    font-size: 220%;
+.skills ul {
+    text-align: center;
+}
+
+.skills ul li {
+    display: inline-block;
+    font-size: 10px;
+    padding: 1%;
+}
+
+.skills i {
+    display: flex;
+    font-size: 4.5em;
 }
 
 .skills ul li {
@@ -270,11 +277,12 @@ button:hover {
 #extra-skills p {
     display: inline-flex;
     text-align: center;
+    font-weight: bold;
     flex-wrap: nowrap;
     background-color: black;
-    color:#F6E8D2;
+    color:#E7E4DF;
     border-radius: 25px;
-    padding: 2%;
+    padding: 1%;
     margin: 2%;
 }
 
@@ -293,6 +301,7 @@ button:hover {
 .beside ul li {
     display: inline-block;
     font-size: 10px;
+    padding: 2%;
 }
 
 .beside i {
@@ -323,7 +332,7 @@ button:hover {
 
 footer {
     display: flex;
-    background-color: #F6E8D2;
+    background-color: #E7E4DF;
     text-align: center;
     font-weight: bold;
 }
@@ -362,7 +371,7 @@ footer {
 
     #header-bar nav {
         position: absolute;
-        right: 2%;
+        right: 8%;
         bottom: 101%;
     }
 
@@ -377,11 +386,16 @@ footer {
         width: 30%;
         left: 15%;
     }
+    /*** ABOUT STYLES ***/
+
+    #about-me {
+        padding: 2%;
+    }
 
     /*** PROJECT STYLES ***/
 
     #work {
-        background-color: #71826D;
+        background-color: #3B4D38;
         display: flex;
         padding-bottom: 20px;
         width: 100%;
@@ -437,7 +451,7 @@ footer {
 
     #header-bar nav {
         position: absolute;
-        right: 2%;
+        right: 5%;
         bottom: 90%;
     }
 
@@ -453,10 +467,21 @@ footer {
         left: 25%;
     }
 
+    /*** ABOUT ME STYLES ***/
+
+    #about-me h2 {
+        margin: 2% 0 0 10%;
+    }
+
+    #about-me p {
+        width: 80%;
+        margin-left: 10%;
+    }
+
     /*** PROJECT STYLES ***/
 
     #work {
-        background-color: #71826D;
+        background-color: #3B4D38;
         display: flex;
         padding-bottom: 20px;
         width: 100%;
@@ -472,7 +497,7 @@ footer {
     }
     
     #work p {
-        color: #F6E8D2;
+        color: #E7E4DF;
     }
 
     figure img {
@@ -501,6 +526,10 @@ footer {
         margin: 2% 30% 10% 0;
         width: 50%;
         float: left;
+    }
+
+    #extra-skills p {
+       justify-content: space-around;
     }
 
     .beside {
