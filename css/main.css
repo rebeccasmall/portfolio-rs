@@ -187,10 +187,15 @@ section#work {
 
 #work p {
     color: #E7E4DF;
+    text-align: left !important;
 }
 
 #portfolio-wrapper h4 {
     text-align: center;
+}
+
+.project-description {
+    text-align: left !important;
 }
 
 figure img {
@@ -201,7 +206,6 @@ figure img {
 }
 
 .figure p {
-    text-align: center;
     margin: 5%;
 }
 
